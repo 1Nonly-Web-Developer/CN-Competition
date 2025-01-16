@@ -90,7 +90,7 @@ nav a:hover::after {
     overflow: hidden;
     position: relative;
     font-size: 2rem;
-    background-color: #324964;
+    background-color: #f4f4f4;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -103,7 +103,7 @@ nav a:hover::after {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #f4f4f4;
+    color: #324964;
     animation: marquee 05s linear infinite;
 }
 
@@ -347,6 +347,7 @@ iframe {
 
 .content-flex .row ul {
     list-style: none;
+    padding-top: 20px;
 }
 
 .content-flex .row ul li {
@@ -464,6 +465,7 @@ iframe {
     #about .about-left,
     #about .about-right {
         width: 100%;
+        margin-right: 20px;
     }
 
     .services-flex,
