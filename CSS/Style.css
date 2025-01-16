@@ -503,14 +503,6 @@ iframe {
         flex-direction: column;
         text-align: center;
     }
-
-    .footer-section form {
-        flex-direction: column;
-    }
-
-    .footer-section form button {
-        width: 100%;
-    }
 }
 
 @media (max-width: 480px) {
