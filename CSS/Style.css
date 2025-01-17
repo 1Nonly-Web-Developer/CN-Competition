@@ -27,7 +27,6 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(to right, ffffffb7, #d7d7d741, #fffafa41, #e8e8e846);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,7 +44,6 @@ nav ul {
     display: flex;
     list-style: none;
     gap: 30px;
-    list-style-type: none;
 }
 
 nav a {
@@ -90,9 +88,7 @@ nav a:hover::after {
 }
 
 #animate {
-    white-space: nowrap;
     overflow: hidden;
-    position: relative;
     font-size: 1rem;
     width: 100%;
     display: flex;
@@ -102,12 +98,9 @@ nav a:hover::after {
 }
 
 .animate-heading {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
     color: #324964;
-    animation: marquee 05s linear infinite;
+    animation: marquee 5s linear infinite;
 }
 
 @keyframes marquee {
@@ -170,16 +163,14 @@ nav a:hover::after {
 }
 
 .about-img img {
-    border-radius: 50%;
+    border-radius: 25px;
     padding: 20px;
 }
 
 /* Company Animate Styling */
 
 #company-animate {
-    white-space: nowrap;
     overflow: hidden;
-    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -197,13 +188,10 @@ nav a:hover::after {
 
 .animate-companies {
     display: flex;
-    gap: 80px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    gap: 40px;
     text-align: center;
     color: #f4f4f4;
-    animation: companies 10s linear infinite;
+    animation: companies 8s linear infinite;
 }
 
 @keyframes companies {
@@ -325,7 +313,6 @@ textarea {
 iframe {
     width: 100%;
     height: 500px;
-    border: none;
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -349,6 +336,7 @@ iframe {
 .footer-section {
     flex: 1;
     min-width: 250px;
+    padding: 10px 20px;
 }
 
 .foot-section {
@@ -392,28 +380,12 @@ iframe {
     border-radius: 5px;
 }
 
-.footer-section form button {
-    padding: 10px 20px;
-    background-color: #f16bb5;
-    color: #000000;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.footer-section form button:hover {
-    background-color: #ea8ec0;
-    color: #fff;
-}
-
 .footer-bottom {
     margin-top: 40px;
     text-align: center;
     border-top: 2px solid #000;
     padding-top: 10px;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .footer-bottom p a {
@@ -423,7 +395,7 @@ iframe {
 }
 
 .footer-bottom p a:hover {
-    text-decoration: underline;
+    color: #808080;
 }
 
 .bx {
@@ -490,7 +462,6 @@ iframe {
 
     #about .about-left,
     #about .about-right {
-        /* width: 100%; */
         margin-right: 20px;
     }
 
@@ -542,7 +513,11 @@ iframe {
     }
 
     .hero h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
     }
 
     #about .about {
