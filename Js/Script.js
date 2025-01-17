@@ -18,7 +18,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // AOS Animation Init...
-AOS.init();
+AOS.init({
+    duration: 1000, 
+    easing: 'ease',
+    once: true,
+});
 
 // Hamburger Menu bar...
 var hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
@@ -37,3 +41,17 @@ menu_item.forEach((item) => {
 		mobile_menu.classList.toggle('active');
 	});
 });
+
+// back to top
+
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+        document.querySelector('#back-to-top').style.display = 'block';
+    } else {
+        document.querySelector('#back-to-top').style.display = 'none';
+    }
+});
+document.querySelector('#back-to-top').addEventListener('click', function() {
+    window.scrollTo({top: 0, behavior:'smooth'});
+});
+

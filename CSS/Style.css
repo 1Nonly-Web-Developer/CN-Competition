@@ -522,6 +522,20 @@ iframe {
     background: transparent;
 }
 
+/* Back to top */
+
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #f4f4f4a3;
+    font-size: 24px;
+    border-radius: 6px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
 /* Responsive Design */
 
 @media (max-width: 768px) {
