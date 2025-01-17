@@ -104,8 +104,6 @@ h2 {
 #header .hamburger {
 	height: 60px;
 	width: 60px;
-	display: inline-block;
-	border: 3px solid #333;
 	border-radius: 50%;
 	position: relative;
 	display: flex;
@@ -114,7 +112,6 @@ h2 {
 	z-index: 100;
 	cursor: pointer;
 	transform: scale(0.8);
-	margin-right: 20px;
 }
 
 #header .hamburger:after {
